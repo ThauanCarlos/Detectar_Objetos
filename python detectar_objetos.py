@@ -2,9 +2,10 @@ import cv2
 import numpy as np
 
 # Configurar os caminhos corretos para o YOLO
-config_path = 'C:/Users/ThauanCarlosDeJesusP/Desktop/yolo/yolov3.cfg'
-weights_path = 'C:/Users/ThauanCarlosDeJesusP/Desktop/yolo/yolov3.weights'
-names_path = 'C:/Users/ThauanCarlosDeJesusP/Desktop/yolo/coco.names'
+# Entre "/Users/" é "/Desktop/" addicione o nome user
+config_path = 'C:/Users//Desktop/yolo/yolov3.cfg'
+weights_path = 'C:/Users//Desktop/yolo/yolov3.weights'
+names_path = 'C:/Users//Desktop/yolo/coco.names'
 
 # Carregar o modelo YOLO
 net = cv2.dnn.readNet(weights_path, config_path)
